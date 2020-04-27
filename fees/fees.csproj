@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A23A19B-284B-440C-8E2F-C6FD19C7EC95}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>fees</RootNamespace>
+    <AssemblyName>fees</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="screen\ADDCOURSE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screen\ADDCOURSE.Designer.cs">
+      <DependentUpon>ADDCOURSE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screen\ADDSTUDENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screen\ADDSTUDENT.Designer.cs">
+      <DependentUpon>ADDSTUDENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screen\adminform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screen\adminform.Designer.cs">
+      <DependentUpon>adminform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screen\AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screen\AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screen\FEESTRUCTURE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screen\FEESTRUCTURE.Designer.cs">
+      <DependentUpon>FEESTRUCTURE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screen\FEETRANSACTION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screen\FEETRANSACTION.Designer.cs">
+      <DependentUpon>FEETRANSACTION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screen\Firsty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screen\Firsty.Designer.cs">
+      <DependentUpon>Firsty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screen\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screen\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screen\mca1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screen\mca1.Designer.cs">
+      <DependentUpon>mca1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screen\mca2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screen\mca2.Designer.cs">
+      <DependentUpon>mca2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screen\mca3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screen\mca3.Designer.cs">
+      <DependentUpon>mca3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screen\secondy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screen\secondy.Designer.cs">
+      <DependentUpon>secondy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screen\signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screen\signup.Designer.cs">
+      <DependentUpon>signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screen\STUDENTLIST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screen\STUDENTLIST.Designer.cs">
+      <DependentUpon>STUDENTLIST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screen\Templates\TemplateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screen\Templates\TemplateForm.Designer.cs">
+      <DependentUpon>TemplateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screen\thirdy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screen\thirdy.Designer.cs">
+      <DependentUpon>thirdy.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="screen\ADDCOURSE.resx">
+      <DependentUpon>ADDCOURSE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screen\ADDSTUDENT.resx">
+      <DependentUpon>ADDSTUDENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screen\adminform.resx">
+      <DependentUpon>adminform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screen\AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screen\FEESTRUCTURE.resx">
+      <DependentUpon>FEESTRUCTURE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screen\FEETRANSACTION.resx">
+      <DependentUpon>FEETRANSACTION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screen\Firsty.resx">
+      <DependentUpon>Firsty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screen\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screen\mca1.resx">
+      <DependentUpon>mca1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screen\mca2.resx">
+      <DependentUpon>mca2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screen\mca3.resx">
+      <DependentUpon>mca3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screen\secondy.resx">
+      <DependentUpon>secondy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screen\signup.resx">
+      <DependentUpon>signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screen\STUDENTLIST.resx">
+      <DependentUpon>STUDENTLIST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screen\Templates\TemplateForm.resx">
+      <DependentUpon>TemplateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screen\thirdy.resx">
+      <DependentUpon>thirdy.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
